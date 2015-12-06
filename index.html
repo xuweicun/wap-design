@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/ratchet.css" rel="stylesheet">
+		<script src="js/ratchet.js"></script>
+	</head>
+	<body>
+	<header class="bar bar-nav">
+		<a href="history.go(-1);" class="icon icon-left-nav pull-left"></a>
+		<a href="#search" class="icon icon-search pull-right"></a>
+		<h2 class="title">爱说明</h2>
+	</header>
+	<div class="content">
+		<ul class="table-view" id="search">
+			<li class="table-view-cell">
+				<form method="post" action="__CONTROLLER__/searchitem">
+				<input type="search" placeholder="搜索：名称/条形码">
+			</form>
+			</li>
+		</ul>
+		<ul class="table-view">
+			<li class="table-view-cell active"><a href="" class="navigate-right">电子产品</a></li>
+			<li class="table-view-cell"><a href="" class="navigate-right">汽车</a></li>
+			<li class="table-view-cell"><a href="" class="navigate-right">母婴用品</a></li>
+			<li class="table-view-cell"><a href="" class="navigate-right">药品</a></li>
+			<li class="table-view-cell"><a href="" class="navigate-right">所有</a></li>
+		</ul>
+	</div>
+	</body>
+	</html>	

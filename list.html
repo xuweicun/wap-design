@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/ratchet.css" rel="stylesheet">
+		<script src="js/ratchet.js"></script>
+	</head>
+	<body>
+	<header class="bar bar-nav">
+		<a href="history.go(-1);" class="icon icon-left-nav pull-left"></a>
+		<a href="#search" class="icon icon-search pull-right"></a>
+		<h2 class="title">爱说明</h2>
+	</header>
+	<div class="content">
+		<ul class="table-view" id="search">
+			<li class="table-view-cell">
+				<form method="post" action="__CONTROLLER__/searchitem">
+				<input type="search" placeholder="搜索：名称/条形码">
+			</form>
+			</li>
+		</ul>
+		<ul class="table-view">
+			<li class="table-view-cell media">
+				<a href="" class="navigate-right">
+					<img src="http://placehold.it/80x80" alt="" class="media-object pull-left">
+				<div class="media-body">
+					
+						<h1>物品名称</h1>
+				
+					<p>物品简介</p>
+					<button><span class="icon icon-star"></span>关注</button>
+				</div>
+			</a>
+			</li>
+			<li class="table-view-cell media">
+				<a href="" class="navigate-right">
+					<img src="http://placehold.it/80x80" alt="" class="media-object pull-left">
+				<div class="media-body">
+					
+						<h1>帕萨特</h1>
+				
+					<p>物品简介</p>
+				</div>
+			</a>
+			</li>
+			
+		</ul>
+	</div>
+	</body>
+	</html>	
