@@ -5,7 +5,7 @@
         <title>基本信息</title>
 
         <!-- Sets initial viewport load and disables zooming  -->
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, max-width=600px">
 
         <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -13,7 +13,7 @@
 
         <!-- Include the compiled Ratchet CSS -->
         <link href="css/ratchet.css" rel="stylesheet">
-        <link href="/Public/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://3.scuthelper.sinaapp.com/Application/Home/View/Public/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Include the compiled Ratchet JS -->
         <script src="js/ratchet.js"></script>
@@ -50,30 +50,14 @@
             </div>
             <button class="btn btn-block btn-warning">whatever</button>
                     
-            <div class="container">
-            <button class="btn btn-large btn-block btn-info" data-toggle="modal" data-target="#jwxt">教务系统快速登录</button>
-                <div class="modal fade" id="jwxt" tabindex="-1" role="dialog" 
-   aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" 
-               data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="myModalLabel">教务系统快速登录</h4>
-                            </div>
-                            <div class="modal-body">
-                               ddddd
-                            </div>
-                        </div>
-                        <!-- /.modal-content --> </div>
-                </div><!-- /.modal -->                
+            <div class="container" id="information">
+            <button class="btn btn-block" data-toggle="collapse" data-parent="#information" href="#collapseOne">show the information</button>         
                 
-                <div class="row">
+                <div class="row collapse" id="collapseOne">
                     <ul class="table-view">
                         <li class="table-view-cell">
                             <a class="navigate-right">
-                                <span class="icon icon-car"></span>
-                              品牌: PASSAT
+                                <span class="icon icon-car"></span>品牌: PASSAT
                             </a>
                         </li>
                         <li class="table-view-cell">
@@ -86,6 +70,8 @@
                     </ul>
 
                 </div>
+                <button class="btn btn-block btn-success" data-toggle="collapse" data-parent="#information" href="#collapseTwo">show the information</button>
+                <div class="row collapse" id="collapseTwo"><button class="btn btn-block">what</button> </div>
             </div>
 
         </div>
