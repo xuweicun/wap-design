@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>基本信息</title>
+
+        <!-- Sets initial viewport load and disables zooming  -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <!-- Include the compiled Ratchet CSS -->
+        <link href="css/ratchet.css" rel="stylesheet">
+        <link href="/Public/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Include the compiled Ratchet JS -->
+        <script src="js/ratchet.js"></script>
+        <script src="js/push.js"></script>
+        <script src="js/sliders.js"></script>
+        <script src="js/modals.js"></script>
+        <script src="/Public/js/ratchet.js"></script>
+        <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://3.scuthelper.sinaapp.com/Application/Home/View/Public/js/bootstrap.js"></script>
+        <style>
+            .slide img{display: inline-block;width: 100%;height: 150px !important;}
+        </style>
+    
+    </head>
+    <body>
+
+        <!-- Make sure all your bars are the first things in your <body> -->
+        <header class="bar bar-nav">
+            <h1 class="title">大众新PASSAT</h1>
+        </header>
+        <div class="content">
+            <div class="slider" id="mySlider">
+                <div class="slide-group">
+                    <div class="slide">
+                        <img src="assets/img/slide-1.jpg" >        
+                        <span class="slide-text">
+                            <span class="icon icon-left-nav"></span>
+                            Slide me
+                        </span>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/slide-2.jpg"></div>
+                </div>
+            </div>
+            <button class="btn btn-block btn-warning">whatever</button>
+                    
+            <div class="container">
+            <button class="btn btn-large btn-block btn-info" data-toggle="modal" data-target="#jwxt">教务系统快速登录</button>
+                <div class="modal fade" id="jwxt" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="myModalLabel">教务系统快速登录</h4>
+                            </div>
+                            <div class="modal-body">
+                               ddddd
+                            </div>
+                        </div>
+                        <!-- /.modal-content --> </div>
+                </div><!-- /.modal -->                
+                
+                <div class="row">
+                    <ul class="table-view">
+                        <li class="table-view-cell">
+                            <a class="navigate-right">
+                                <span class="icon icon-car"></span>
+                              品牌: PASSAT
+                            </a>
+                        </li>
+                        <li class="table-view-cell">
+                            <a class="navigate-right">
+                                <span class="badge">新捷达</span>
+                                型号
+                            </a>
+                        </li>
+                        <li class="table-view-cell">保质期：三年或十万公里</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+        
+            
+         
+        <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+        
+    </body>
+</html>
